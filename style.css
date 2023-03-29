@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(223, 222, 202);
+    background-size: cover;
+    background-image: url("/images/4.jpg");
+    background-repeat: no-repeat;
+}
+.main-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h1{
+    position: relative;
+    color:antiquewhite;
+    -webkit-text-stroke: 0.1vw rgb(48, 197, 95);
+    font-size: 80px;
+    font-family: 'Alkatra', cursive;
+    white-space: no-wrap;
+}
+h1::before{
+    content:attr(data-text);
+    position: absolute;
+    left: 0;
+    top:0;
+    width:0;
+    height:100%;
+    color:rgb(38, 140, 38);
+    border-right: 3px solid rgb(19, 206, 19);
+    -webkit-text-stroke-color: rgb(23, 43, 23);
+    overflow:hidden;
+    animation: anime 5s linear infinite;
+}
+h2{
+    color: rgb(121, 24, 24);
+    font-size: 80px;
+    border-bottom: 10px solid rgb(121, 24, 24);
+    font-family: 'Alkatra', cursive;
+    width: 75%;
+}
+@keyframes anime {
+    0%,10%,100%{
+        width:0;
+    }
+    70%,90%{
+        width:100%;
+    
+    }
+}
+.e{
+    font-size:60px;
+    color: rgb(40, 112, 49);
+}
+p{
+    font-family: 'Delicious Handrawn', cursive;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: solid;
+    line-height: 120%;
+    color:rgb(255, 255, 255)
+}
+.content{
+    margin-inline: 20px;
+}
+.imgsli{
+    width:calc(1.77*200px);
+    height: 200px;
+    position: relative;
+    background-size: contain;
+    background-image: url("/images/1.jpg");
+    background-repeat: no-repeat;
+    /* border:0.5px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    animation: amm 6s linear infinite;
+}
+@keyframes amm {
+        0%{
+            left:0px;
+            background-image: url("/images/1.jpg"); 
+        }
+        25%{
+            left:calc(298px);
+            background-image: url("/images/2.jpg");
+        }
+        50%{
+            left:calc(298px*2);
+            background-image: url("/images/3.jpg");
+        }
+        75%{
+            left:calc(3*298px);
+            background-image: url("/images/5.jpg");
+        }
+        100%{
+            left:calc(4*298px);
+            background-image: url("/images/2.jpg");
+
+        }
+}
+#p2{
+    color: rgb(255, 255, 255);
+    text-shadow: 10px silver ;
+}
