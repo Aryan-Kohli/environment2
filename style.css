@@ -9,7 +9,7 @@ body{
     padding: 0;
     background-color: rgb(223, 222, 202);
     background-size: cover;
-    background-image: url("./images/4.jpg");
+    background-image: url("\images\4.jpg");
     background-repeat: no-repeat;
 }
 .main-head{
