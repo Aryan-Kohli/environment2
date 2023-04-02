@@ -9,7 +9,7 @@ body{
     padding: 0;
     background-color: rgb(223, 222, 202);
     background-size: cover;
-    background-image: url("/images/4.jpg");
+    background-image: url("./images/4.jpg");
     background-repeat: no-repeat;
 }
 .main-head{
@@ -74,7 +74,7 @@ p{
     height: 200px;
     position: relative;
     background-size: contain;
-    background-image: url("/images/1.jpg");
+    background-image: url("./images/1.jpg");
     background-repeat: no-repeat;
     /* border:0.5px solid black; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -83,23 +83,23 @@ p{
 @keyframes amm {
         0%{
             left:0px;
-            background-image: url("/images/1.jpg"); 
+            background-image: url("./images/1.jpg"); 
         }
         25%{
             left:calc(298px);
-            background-image: url("/images/2.jpg");
+            background-image: url("./images/2.jpg");
         }
         50%{
             left:calc(298px*2);
-            background-image: url("/images/3.jpg");
+            background-image: url("./images/3.jpg");
         }
         75%{
             left:calc(3*298px);
-            background-image: url("/images/5.jpg");
+            background-image: url("./images/5.jpg");
         }
         100%{
             left:calc(4*298px);
-            background-image: url("/images/2.jpg");
+            background-image: url("./images/2.jpg");
 
         }
 }
